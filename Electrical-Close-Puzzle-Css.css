@@ -1,0 +1,43 @@
+.line-1.line-back {
+    stroke: #25378d;
+}
+
+.light {
+  opacity: 0;
+}
+
+.drag {fill: white; opacity: 0;}
+.line {
+  stroke-width: 10px;
+  pointer-events: none;
+}
+.line-back {
+  stroke-width: 10px;
+  pointer-events: none;
+}
+.line-6, .line-12, .line-18, .line-21, .line-27, .line-33 {
+  stroke: #f0eb2a;
+  &.line-back {
+    stroke: #f0eb2a;
+  }
+}
+.line-5, .line-11, .line-17, .line-22, .line-28, .line-34 {
+  stroke: #5dbc51;
+  &.line-back {
+    stroke: #5dbc51;
+  }
+}
+.line-4, .line-10, .line-16, .line-23, .line-29, .line-35 {
+  stroke: #f27476;
+  &.line-back {
+    stroke: #f27476;
+  }
+}
+.line-3, .line-9, .line-15, .line-24, .line-30, .line-36 {
+  stroke: #435791;
+  &.line-back {
+    stroke: #435791;
+  }
+}
+
+.c{fill:#273065;stroke:#1a1b36}.c,.d,.e,.f,.k,.u{stroke-miterlimit:10}.c,.d,.e,.f,.u,.y{stroke-width:5px}.d{fill:#71160e;stroke:#280f10}.e{fill:#8c6c15}.e,.u{stroke:#38321a}.f{fill:#212021;stroke:#000}.h{fill:#9b3015;stroke:#471d12}.h,.y{stroke-linecap:round;stroke-linejoin:round}.k,.y{fill:none}.k{stroke:#1d1d1b;stroke-width:6px}.l{fill:#d9c905}.m{fill:#25378d}.n{fill:#324d9c}.o{fill:#a71916}.p{fill:#e52320}.q{fill:#aa9f17}.r{fill:#ffeb13}.s{fill:#90378c}.t{fill:#a6529a}.u{fill:#1d1d1b}.v{fill:#5b5c64}.w{fill:#292829}.x{fill:#2f3038}.y{stroke:#252526}
