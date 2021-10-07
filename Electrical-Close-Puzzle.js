@@ -1,5 +1,6 @@
 jQuery( document ).ready(function() {
   var rect = '';
+  jQuery(".electrical-close-puzzle img").attr("style", "z-index:-1");
   jQuery( ".electrical-close-puzzle .av-image-hotspot_inner" ).each(function( index ) {
     var text_num = jQuery(this).text();
     if(text_num > 2 && text_num != 7 && text_num != 8 && text_num != 13 && text_num != 14 && text_num != 19 && text_num != 20 && text_num != 25 && text_num != 26 && text_num != 31 && text_num != 32 && text_num != 37 && text_num != 38){
@@ -21,7 +22,9 @@ jQuery( document ).ready(function() {
       }
     }
   });
-  jQuery( ".electrical-close-puzzle .av-hotspot-container-inner-wrap" ).prepend('<svg width="980" height="490" viewBox="0 0 980 490" style="touch-action: none;position: absolute;">'+rect+'</svg>');
+  var main_width = jQuery(".av-hotspot-container-inner-cell").width();
+  var main_height = jQuery(".av-hotspot-container-inner-cell").height();
+  jQuery( ".electrical-close-puzzle .av-hotspot-container-inner-wrap" ).prepend('<svg width="'+main_width+'" height="'+main_height+'" viewBox="0 0 '+main_width+' '+main_height+'" style="touch-action: none;position: absolute;">'+rect+'</svg>');
 
 
   var completedLights = [];
